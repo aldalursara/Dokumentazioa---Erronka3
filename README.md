@@ -4,10 +4,16 @@
 ---
 
 **Modulua:** Sistema informatiko eta sareetako administrazioa
+
+
+
 **Ikastetxea:** CIFP Uni Eibar-Ermua LHII
+
+
+
 **Data:** 2026-02-26
 
----
+
 
 ## AURKIBIDEA
 ### SISTEMA ERAGILEAK EZARTZEA

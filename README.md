@@ -1,7 +1,7 @@
 # DOKUMENTAZIOA---Erronka3_2
 **Egileak:** Alex Marquez, Suhar Prieto, Hodei Basterretxea, Jokin Carrasco eta Sara Aldalur
 
-![Sistemaren konfigurazioa](img/pantaila_argazkia.png)
+![Sistemaren konfigurazioa](img/uniEibar.png)
 
 **Modulua:** Sistema informatiko eta sareetako administrazioa
 

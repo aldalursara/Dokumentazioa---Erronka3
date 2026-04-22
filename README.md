@@ -1,7 +1,13 @@
-# Dokumentazioa---Erronka3
-# AURKIBIDEA
-# SISTEMA ERAGILEAK
-# MARKATZE LENGOAIAK
-# DIGITALIZAZIOA
-# DATU BASEAK
-# SAREEN PLANIFIKAZIOA
+# DOKUMENTAZIOA---Erronka3_2
+Egileak: Alex Marquez, Suhar Prieto, Hodei Basterretxea, Jokin Carrasco eta Sara Aldalur
+![Sistemaren konfigurazioa]()
+MODULUA: Sistema informatiko eta sareetako administrazioa
+IKASTETXEA: CIFP Uni Eibar-Ermua LHII
+DATA: 2026-02-26
+## SISTEMA ERAGILEAK EZARTZEA
+## DATU BASEEN KUDEAKETA
+## DIGITALIZAZIOA
+## MARKATZEKO LENGOAIAK 
+## SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
+
+

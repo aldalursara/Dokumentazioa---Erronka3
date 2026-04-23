@@ -1,6 +1,6 @@
-## DOKUMENTAZIOA
+DOKUMENTAZIOA
 ---
-# Erronka3.2
+Erronka3.2
 
 **Egileak:** Alex Marquez, Suhar Prieto, Hodei Basterretxea, Jokin Carrasco eta Sara Aldalur
 
@@ -16,7 +16,7 @@
 
 ---
 
-# AURKIBIDEA
+AURKIBIDEA
 
 ### 1. SISTEMA ERAGILEAK EZARTZEA
 ### 2. DATU BASEEN KUDEAKETA

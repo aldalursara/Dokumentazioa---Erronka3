@@ -1,4 +1,4 @@
-# ** DOKUMENTAZIOA **
+# **DOKUMENTAZIOA**
 ---
 # **Erronka3.2**
 

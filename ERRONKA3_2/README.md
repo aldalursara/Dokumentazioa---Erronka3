@@ -14,6 +14,38 @@
 
 **Data:** 2026-02-26
 
+---
+
+# AURKIBIDEA
+
+## SISTEMA ERAGILEAK EZARTZEA
+## DATU BASEEN KUDEAKETA
+## DIGITALIZAZIOA
+## SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
+## MARKATZE LENGOAIAK
+
+---
+
+# SISTEMA ERAGILEAK EZARTZEA
+
+---
+
+# DATU BASEEN KUDEAKETA
+
+---
+
+# DIGITALIZAZIOA
+
+Erronkaren bigarren faseko helburu-nagusia datu-basea ingurune lokaletik hodeira (Cloud) migratzea da, MongoDB Atlas zerbitzua erabiliz, eta ondoren, adimen artifiziala eta datuen bistaratzea lantzea da.
+
+---
+
+# SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
+
+---
+
+# MARKATZE LENGOAIAK
+
 
 
 

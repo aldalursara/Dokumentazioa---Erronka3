@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dillinger_sample
+title: Aurkibidea
 ---
 
 # ajhdlusag

@@ -3,7 +3,6 @@ layout: page
 title: Aurkibidea
 ---
 
-# **AURKIBIDEA**
 
 ### 1. SISTEMA ERAGILEAK EZARTZEA
 ### 2. DATU BASEEN KUDEAKETA

@@ -1,4 +1,6 @@
-# **DOKUMENTAZIOA**
+---
+layout: page
+title: Hasiera
 ---
 # **Erronka3.2**
 

@@ -22,9 +22,9 @@ title: Dokumentazioa
 
 
 
-# DATU BASEEN KUDEAKETA
 
----
+
+
 
 # DIGITALIZAZIOA
 

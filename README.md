@@ -1,7 +1,4 @@
----
-layout: page
-title: Hasiera
----
+
 # **Erronka3.2**
 
 **Egileak:** Alex Marquez, Suhar Prieto, Hodei Basterretxea, Jokin Carrasco eta Sara Aldalur

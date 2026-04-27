@@ -17,19 +17,3 @@ title: Dokumentazioa
 
 **Data:** 2026-02-26
 
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-# MARKATZE LENGOAIAK

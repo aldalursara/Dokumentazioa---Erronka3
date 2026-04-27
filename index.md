@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hasiera
+title: Dokumentazioa
 ---
 
 # **Erronka3.2**

@@ -3,7 +3,7 @@ layout: page
 title: Digitalizazioa
 ---
 
-# DIGITALIZAZIOA
+
 
 Erronkaren bigarren faseko helburu-nagusia datu-basea ingurune lokaletik hodeira (Cloud) migratzea da, MongoDB Atlas zerbitzua erabiliz, eta ondoren, adimen artifiziala eta datuen bistaratzea lantzea da.
 

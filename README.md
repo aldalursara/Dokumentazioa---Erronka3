@@ -14,29 +14,7 @@
 **Data:** 2026-02-26
 
 
-# SISTEMA ERAGILEAK EZARTZEA
 
----
-
-# DATU BASEEN KUDEAKETA
-
----
-
-# DIGITALIZAZIOA
-
-Erronkaren bigarren faseko helburu-nagusia datu-basea ingurune lokaletik hodeira (Cloud) migratzea da, MongoDB Atlas zerbitzua erabiliz, eta ondoren, adimen artifiziala eta datuen bistaratzea lantzea da.
-
-Hasteko, github-en repositorio bat sortu dugu.
-
-![repositorio](img/repositorio.png)
-
----
-
-# SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
-
----
-
-# MARKATZE LENGOAIAK
 
 
 

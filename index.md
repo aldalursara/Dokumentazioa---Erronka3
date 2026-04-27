@@ -28,9 +28,7 @@ title: Dokumentazioa
 
 
 
----
 
-# SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
 
 ---
 

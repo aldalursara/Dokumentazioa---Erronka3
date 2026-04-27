@@ -19,9 +19,8 @@ title: Dokumentazioa
 
 
 
-# SISTEMA ERAGILEAK EZARTZEA
 
----
+
 
 # DATU BASEEN KUDEAKETA
 

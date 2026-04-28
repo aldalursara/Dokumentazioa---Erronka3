@@ -85,15 +85,3 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
     ```bash
     startxfce4
     ```
-
----
-
-## 🚀 5. Gertakari Teknikoen Log-a (Troubleshooting)
-
-Proiektuan zehar konpondutako arazo nagusiak:
-
-```diff
-+ [SOLVED] Emergency Mode: fstab fitxategian akatsa zegoen; lerroa komentatu da sistema berreskuratzeko.
-+ [SOLVED] RDP Pantaila Beltza: GNOMEren ordez XFCE eta lightdm konfiguratu dira bateragarritasunagatik.
-+ [SOLVED] Baimen Akatsa: 'chown -R alex:alex /mnt/datos_empresa' bidez Samba sarbidea zuzendu da.
-- KONTUZ: Gogoratu saio fisikoa itxi behar dela RDP bidez konektatu aurretik.

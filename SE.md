@@ -1,7 +1,3 @@
-# Erronka OS: Zerbitzarien Administrazio Osoa (Debian 12)
-
-Debian 12 zerbitzariaren inplementazio integrala ingurune mistoan. Dokumentazio honek konfigurazio tekniko guztiak, erabilitako komandoak eta ebatzitako gertakariak jasotzen ditu.
-
 ---
 
 ## 1. Administrazio Grafikoa: Cockpit

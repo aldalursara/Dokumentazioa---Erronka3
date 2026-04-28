@@ -86,4 +86,25 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
     ```bash
     startxfce4
     ```
+    5. Urrutiko Sarbidea eta Mahaigaina (RDP)
+Konexio grafiko egonkorra bermatzeko konfigurazio espezifikoa.
+
+### Zerbitzaria: xrdp + XFCE
+RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
+1.  **Instalazioa:**
+    ```bash
+    sudo apt install xfce4 xfce4-goodies xrdp -y
+    ```
+2.  **XFCE behartu saio guztietan (startwm.sh):**
+    `/etc/xrdp/startwm.sh` fitxategia editatu, amaierako lerroak komentatu (#) eta hau gehitu:
+    ```bash
+    startxfce4
+    ```
+
+### Bezeroa: Konexioa eta Segurtasuna
+* **Windows (mstsc):** Zerbitzariaren IP-a erabiliz: `192.168.70.147`.
+* **Linux (xfreerdp):** Ziurtagiri eta segurtasun akatsak saihesteko:
+    ```bash
+    xfreerdp /v:192.168.70.147 /u:alex /cert:ignore
+    ```
 <img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />

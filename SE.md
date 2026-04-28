@@ -86,7 +86,11 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
     ```bash
     startxfce4
     ```
-    5. Urrutiko Sarbidea eta Mahaigaina (RDP)
+<img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />
+
+---
+
+## 🖥️ 5. Urrutiko Sarbidea eta Mahaigaina (RDP)
 Konexio grafiko egonkorra bermatzeko konfigurazio espezifikoa.
 
 ### Zerbitzaria: xrdp + XFCE
@@ -107,4 +111,5 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
     ```bash
     xfreerdp /v:192.168.70.147 /u:alex /cert:ignore
     ```
-<img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />
+
+---

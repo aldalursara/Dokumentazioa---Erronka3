@@ -11,3 +11,15 @@ Administratzaile gisa kuoten egoera orokorra egiaztatzeko, honako komando hau er
 $\color{green}{\text{sudo repquota -as}}$
 
 <img width="753" height="493" alt="Captura de pantalla 2026-04-28 083322" src="https://github.com/user-attachments/assets/be719969-823f-42a2-bd66-fa3afd7bac66" />
+
+---
+Sarean partekatutako karpetak (Samba/SMB)
+---
+
+Samba zerbitzua konfiguratu da, Windowseko erabiltzaileak Debian zerbitzarian dauden fitxategietara modu gardenean sar daitezen.
+
+Zerbitzaria fitxategi-arakatzailearen "Sarea" atalean ikus daiteke, ERRONKADEBIAN3 izenarekin, smb:// protokoloa erabiliz.
+
+Windows bezero batetik sartzeko, UNC:\\192.168.70.147 ibilbidea erabiltzen da.
+
+Erabiltzaileak Samban dituen kredentzialen ($\color{green}{\text{smbpasswd}}$) arabera konfiguratu ditu baimen pikortarrak (irakurketa eta idazketa). 

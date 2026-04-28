@@ -90,7 +90,7 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
 
 ---
 
-## 🖥️ 5. Urrutiko Sarbidea eta Mahaigaina (RDP)
+## 5. Urrutiko Sarbidea eta Mahaigaina (RDP)
 Konexio grafiko egonkorra bermatzeko konfigurazio espezifikoa.
 
 ### Zerbitzaria: xrdp + XFCE

@@ -37,3 +37,4 @@ GNOME ingurunean (lehenetsitakoa) RDP bidez sartzeak "pantaila beltza" eta saio-
 3.Konfigurazio Orokorra: Saioa urrunetik hasteko script nagusia (/etc/xrdp/startwm.sh) aldatu da, erabiltzaile guztiek ingurune arina erabil dezaten.
 
 <img width="1044" height="765" alt="Captura de pantalla 2026-04-28 093047" src="https://github.com/user-attachments/assets/7ecf8d83-ad77-4fe4-837b-41f038465c2b" />
+<img width="798" height="634" alt="imagen" src="https://github.com/user-attachments/assets/49e05968-f317-4498-a0a5-3070a2dcfee4" />

@@ -8,6 +8,6 @@ Disko-kuotak aplikatu ditu erabiltzaile espezifikoek kontsumitu dezaketen gehien
 
 Administratzaile gisa kuoten egoera orokorra egiaztatzeko, honako komando hau erabiliko dugu: 
 ```diff
-+ sudo repquota -as
-
+sudo repquota -as
+```
 <img width="753" height="493" alt="Captura de pantalla 2026-04-28 083322" src="https://github.com/user-attachments/assets/be719969-823f-42a2-bd66-fa3afd7bac66" />

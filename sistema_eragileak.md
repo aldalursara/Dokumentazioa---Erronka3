@@ -23,3 +23,5 @@ Zerbitzaria fitxategi-arakatzailearen "Sarea" atalean ikus daiteke, ERRONKADEBIA
 Windows bezero batetik sartzeko, UNC:\\192.168.70.147 ibilbidea erabiltzen da.
 
 Erabiltzaileak Samban dituen kredentzialen ($\color{green}{\text{smbpasswd}}$) arabera konfiguratu ditu baimen pikortarrak (irakurketa eta idazketa). 
+
+<img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />

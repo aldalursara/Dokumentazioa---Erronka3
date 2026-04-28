@@ -1,10 +1,10 @@
-# 🏆 Erronka OS: Zerbitzarien Administrazio Osoa (Debian 12)
+# Erronka OS: Zerbitzarien Administrazio Osoa (Debian 12)
 
 Debian 12 zerbitzariaren inplementazio integrala ingurune mistoan. Dokumentazio honek konfigurazio tekniko guztiak, erabilitako komandoak eta ebatzitako gertakariak jasotzen ditu.
 
 ---
 
-## 📊 1. Administrazio Grafikoa: Cockpit
+## 1. Administrazio Grafikoa: Cockpit
 Zerbitzaria modu profesionalean eta urrutitik kudeatzeko panela.
 
 * **Instalazioa:**
@@ -18,7 +18,7 @@ Zerbitzaria modu profesionalean eta urrutitik kudeatzeko panela.
 
 ---
 
-## 💾 2. Biltegiratzea: RAID eta LVM Konfigurazioa
+## 2. Biltegiratzea: RAID eta LVM Konfigurazioa
 Datuen segurtasuna eta partizioen kudeaketa dinamikoa bermatzeko.
 
 1.  **RAID 1 sortu (Ispilua):**
@@ -41,7 +41,7 @@ Datuen segurtasuna eta partizioen kudeaketa dinamikoa bermatzeko.
 
 ---
 
-## 📏 3. Baliabideen Kontrola: Disko Kuotak
+##  3. Baliabideen Kontrola: Disko Kuotak
 Erabiltzaileek diskoan betetzen duten espazioa mugatzeko sistema.
 
 1.  **Instalazioa eta aktibazioa:**
@@ -61,7 +61,7 @@ Erabiltzaileek diskoan betetzen duten espazioa mugatzeko sistema.
 
 ---
 
-## 📂 4. Zerbitzuak: Samba eta RDP Integrazioa
+##  4. Zerbitzuak: Samba eta RDP Integrazioa
 
 ### Samba (Fitxategiak Windows-ekin partekatzeko)
 1.  **Konfigurazioa (`/etc/samba/smb.conf`):**

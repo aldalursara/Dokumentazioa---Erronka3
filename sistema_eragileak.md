@@ -1,9 +1,6 @@
 ---
-layout: page
-title: Sistema eragileak
----
 Almacenamiento y Gestión de Cuotas
-
+---
 Para simular el almacenamiento de una empresa, se ha configurado un disco dedicado montado en /mnt/datos_empresa y se han establecido políticas de restricción de espacio (cuotas) para los usuarios.
 Configuración de Cuotas
 

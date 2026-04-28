@@ -108,6 +108,7 @@ RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
 ### Bezeroa: Konexioa eta Segurtasuna
 * **Windows (mstsc):** Zerbitzariaren IP-a erabiliz: `192.168.70.147`.
 * **Linux (xfreerdp):** Ziurtagiri eta segurtasun akatsak saihesteko:
+* **Linux (Remmina):** Konexioak kudeatzeko **Remmina** erabili da, RDP protokoloa konfiguratuz eta segurtasun ziurtagiriak onartuz.
     ```bash
     xfreerdp /v:192.168.70.147 /u:alex /cert:ignore
     ```

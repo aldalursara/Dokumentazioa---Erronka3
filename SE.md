@@ -1,115 +1,115 @@
----
+##  1. Baliabideen Monitorizazioa eta Kudeaketa
 
-## 1. Administrazio Grafikoa: Cockpit
-Zerbitzaria modu profesionalean eta urrutitik kudeatzeko panela.
+Zerbitzariaren osasuna (RAM, PUZa, Diskoa eta Sarea) bi bideetatik kontrolatu da:
 
-* **Instalazioa:**
+* **Kudeaketa Grafikoa (Cockpit):**
     ```bash
-    sudo apt update
     sudo apt install cockpit -y
     sudo systemctl enable --now cockpit.socket
+    # Sarbidea: [https://192.168.70.147:9090](https://192.168.70.147:9090)
     ```
-* **Sarbidea:** `https://192.168.70.147:9090` helbidean.
-* **Erabilera:** CPU/RAM monitorizazioa, log-ak aztertzea eta erabiltzaileen kudeaketa grafikoa.
-
----
-
-## 2. Biltegiratzea: RAID eta LVM Konfigurazioa
-Datuen segurtasuna eta partizioen kudeaketa dinamikoa bermatzeko.
-
-1.  **RAID 1 sortu (Ispilua):**
+* **Kontsolaren bidezko kudeaketa:**
+    Baliabideak xehetasunez aztertzeko tresna hauek erabili dira:
     ```bash
-    sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc
-    ```
-2.  **LVM bolumenak kudeatu:**
-    ```bash
-    sudo pvcreate /dev/md0
-    sudo vgcreate vg_datos /dev/md0
-    sudo lvcreate -L 10G -n lv_empresa vg_datos
-    ```
-3.  **Fitxategi-sistema eta muntatze automatikoa:**
-    ```bash
-    sudo mkfs.ext4 /dev/vg_datos/lv_empresa
-    sudo mkdir -p /mnt/datos_empresa
-    # Gehitu lerro hau /etc/fstab fitxategian:
-    /dev/vg_datos/lv_empresa  /mnt/datos_empresa  ext4  defaults  0  2
+    htop         # RAM eta PUZa monitorizatzeko
+    df -h        # Disko gogorraren espazioa ikusteko
+    nload        # Sare txartelaren trafikoa aztertzeko
     ```
 
 ---
 
-##  3. Baliabideen Kontrola: Disko Kuotak
-Erabiltzaileek diskoan betetzen duten espazioa mugatzeko sistema.
+##  2. Kontenedoreak eta Errendimendu Mugak (Docker)
 
-1.  **Instalazioa eta aktibazioa:**
+Docker erabili da zerbitzuak isolatzeko, baliabide muga zorrotzak ezarriz:
+
+* **Mugak eta instalazioa:**
     ```bash
-    sudo apt install quota quotatool -y
-    # Editatu /etc/fstab eta gehitu: 'usrjquota=aquota.user,jqfmt=vfsv0'
-    sudo mount -o remount /mnt/datos_empresa
-    sudo quotacheck -cum /mnt/datos_empresa
-    sudo quotaon -v /mnt/datos_empresa
+    # Kontenedore bat muga zehatzekin abiarazteko adibidea:
+    docker run -d --name web-zerbitzaria \
+      --cpus=".5" \
+      --memory="512m" \
+      -p 8080:80 nginx
     ```
-2.  **Muga ezartzea (Adibidez, 'alex' erabiltzaileari):**
-    ```bash
-    sudo edquota -u alex
-    # Aldatu 'soft' (400M) eta 'hard' (500M) zutabeak.
-    ```
-3.  **Egiaztapena:** `sudo repquota -as`
-<img width="753" height="493" alt="Captura de pantalla 2026-04-28 083322" src="https://github.com/user-attachments/assets/be719969-823f-42a2-bd66-fa3afd7bac66" />
+* **Monitorizazioa eta Alertak:**
+    `docker stats` komandoa erabili da kontenedore bakoitzaren errendimendua web bidez edo kontsolaz aztertzeko eta datuak gordetzeko.
 
 ---
 
-##  4. Zerbitzuak: Samba eta RDP Integrazioa
+##  3. Fitxategi Partekatuak, Baimenak eta Kuotak (Samba)
 
-### Samba (Fitxategiak Windows-ekin partekatzeko)
-1.  **Konfigurazioa (`/etc/samba/smb.conf`):**
+Samba zerbitzaria konfiguratu da Windows eta Linux bezeroentzat:
+
+* **Konfigurazioa (`/etc/samba/smb.conf`):**
     ```ini
-    [Empresa]
+    [Enpresa_Datuak]
     path = /mnt/datos_empresa
     valid users = alex
-    read only = no
+    writable = yes
     browseable = yes
     ```
-2.  **Samba pasahitza ezarri:** `sudo smbpasswd -a alex`
-
-### Urrutiko Mahaigaina (xrdp + XFCE)
-RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
-1.  **Instalazioa:**
+* **Baimenak eta Kuotak:**
     ```bash
-    sudo apt install xfce4 xfce4-goodies xrdp -y
+    # Baimenak zuzendu
+    sudo chown -R alex:alex /mnt/datos_empresa
+    
+    # Kuotak ezarri (500MB muga gogorra)
+    sudo edquota -u alex
+    # Egiaztapena bezeroetatik (Win/Lin):
+    repquota -as /mnt/datos_empresa
     ```
-2.  **XFCE behartu saio guztietan:**
-    `/etc/xrdp/startwm.sh` fitxategia editatu eta amaierako lerroak komentatu (#). Ondoren, gehitu:
-    ```bash
-    startxfce4
-    ```
-<img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />
 
 ---
 
-## 5. Urrutiko Sarbidea eta Mahaigaina (RDP)
-Konexio grafiko egonkorra bermatzeko konfigurazio espezifikoa.
+##  4. Urrutiko Kudeaketa Grafikoa (RDP)
 
-### Zerbitzaria: xrdp + XFCE
-RDP saioak egonkorrak izateko, GNOME ordez XFCE ingurunea konfiguratu da.
-1.  **Instalazioa:**
-    ```bash
-    sudo apt install xfce4 xfce4-goodies xrdp -y
-    ```
-2.  **XFCE behartu saio guztietan (startwm.sh):**
-    `/etc/xrdp/startwm.sh` fitxategia editatu, amaierako lerroak komentatu (#) eta hau gehitu:
-    ```bash
-    startxfce4
-    ```
+Zerbitzaria saretik kudeatzeko ingurune grafikoa ezarri da:
 
-### Bezeroa: Konexioa eta Segurtasuna
-* **Windows (mstsc):** Zerbitzariaren IP-a erabiliz: `192.168.70.147`.
-* **Linux (xfreerdp):** Ziurtagiri eta segurtasun akatsak saihesteko:
-* **Linux (Remmina):** Konexioak kudeatzeko **Remmina** erabili da, RDP protokoloa konfiguratuz eta segurtasun ziurtagiriak onartuz.
+* **Zerbitzarian (xrdp + XFCE):**
     ```bash
-    xfreerdp /v:192.168.70.147 /u:alex /cert:ignore
+    sudo apt install xrdp xfce4 xfce4-goodies -y
+    # XFCE lehenetsi /etc/xrdp/startwm.sh fitxategian:
+    echo "startxfce4" >> /etc/xrdp/startwm.sh
     ```
-    <img width="1044" height="765" alt="Captura de pantalla 2026-04-28 093047" src="https://github.com/user-attachments/assets/7ecf8d83-ad77-4fe4-837b-41f038465c2b" />
-    <img width="798" height="634" alt="imagen" src="https://github.com/user-attachments/assets/49e05968-f317-4498-a0a5-3070a2dcfee4" />
-
+* **Bezeroak:**
+    * **Windows:** *Escritorio Remoto* (MSTSC).
+    * **Linux:** **Remmina** aplikazioa, RDP protokoloa erabiliz.
 
 ---
+
+##  5. Segurtasuna eta Mantentze Automatizatua (Cron)
+
+Analisia eta eguneratzeak programatu dira:
+
+* **Anti-rootkit (rkhunter):**
+    ```bash
+    sudo apt install rkhunter -y
+    sudo rkhunter --propupd # Datu basea eguneratu
+    ```
+* **Programazioa (`crontab -e`):**
+    ```bash
+    # Egunero goizeko 2etan eguneratu eta 3etan rootkit analisia egin
+    00 2 * * * apt update && apt upgrade -y
+    00 3 * * * rkhunter --check --sk
+    ```
+
+---
+
+##  6. Sare Bidezko Instalazio Azpiegitura (PXE)
+
+Bezeroak saretik instalatzeko sistema:
+
+* **DHCP Konfigurazioa (`/etc/dhcp/dhcpd.conf`):**
+    ```text
+    next-server 192.168.70.147;
+    filename "pxelinux.0";
+    ```
+* **TFTP Zerbitzaria:** `/srv/tftp/` direktorioan boot fitxategiak eta instalazio menuak prestatu dira.
+
+---
+
+##  7. Biltegiratze Azpiegitura (RAID & LVM)
+
+Datuen segurtasuna bermatzeko:
+
+* **RAID 1:** `mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc`
+* **LVM:** `pvcreate /dev/md0` -> `vgcreate vg_data /dev/md0` -> `lvcreate -L 10G -n lv_files vg_data`

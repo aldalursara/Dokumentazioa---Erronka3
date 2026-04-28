@@ -111,5 +111,5 @@ Bezeroak saretik instalatzeko sistema:
 
 Datuen segurtasuna bermatzeko:
 
-* **RAID 1:** `mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc`
+* **RAID 5:** `sudo mdadm --create /dev/md0 --level=5 --raid-devices=3 /dev/sdb /dev/sdc /dev/sdd`
 * **LVM:** `pvcreate /dev/md0` -> `vgcreate vg_data /dev/md0` -> `lvcreate -L 10G -n lv_files vg_data`

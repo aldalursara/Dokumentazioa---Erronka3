@@ -58,6 +58,7 @@ Erabiltzaileek diskoan betetzen duten espazioa mugatzeko sistema.
     # Aldatu 'soft' (400M) eta 'hard' (500M) zutabeak.
     ```
 3.  **Egiaztapena:** `sudo repquota -as`
+<img width="753" height="493" alt="Captura de pantalla 2026-04-28 083322" src="https://github.com/user-attachments/assets/be719969-823f-42a2-bd66-fa3afd7bac66" />
 
 ---
 

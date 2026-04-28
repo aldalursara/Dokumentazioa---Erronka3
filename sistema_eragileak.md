@@ -25,3 +25,15 @@ Windows bezero batetik sartzeko, UNC:\\192.168.70.147 ibilbidea erabiltzen da.
 Erabiltzaileak Samban dituen kredentzialen ($\color{green}{\text{smbpasswd}}$) arabera konfiguratu ditu baimen pikortarrak (irakurketa eta idazketa). 
 
 <img width="888" height="542" alt="imagen" src="https://github.com/user-attachments/assets/c089d3ad-19f8-4e32-b967-4e41f9a4f3e2" />
+
+---
+Urrutiko Sarbide Optimizatua (xrdp + XFCE)
+---
+
+GNOME ingurunean (lehenetsitakoa) RDP bidez sartzeak "pantaila beltza" eta saio-itxiera arazoak ematen ditu. Sarbide egonkorra bermatzeko, mahaigaineko ingurune arin batera migratu dugu.
+
+1.XFCE ingurunea instalatu: $\color{green}{\text{sudo apt install xfce4 xfce4-goodies -y}}$
+2.Saio-kudeatzailea hautatu: Instalazioan zehar, lightdm konfiguratu da RDP konexioekin bateragarritasuna hobetzeko.
+3.Konfigurazio Orokorra: Saioa urrunetik hasteko script nagusia (/etc/xrdp/startwm.sh) aldatu da, erabiltzaile guztiek ingurune arina erabil dezaten.
+
+<img width="1044" height="765" alt="Captura de pantalla 2026-04-28 093047" src="https://github.com/user-attachments/assets/7ecf8d83-ad77-4fe4-837b-41f038465c2b" />

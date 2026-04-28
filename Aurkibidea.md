@@ -4,8 +4,8 @@ title: Aurkibidea
 ---
 
 
-### 1. SISTEMA ERAGILEAK EZARTZEA
-### 2. DATU BASEEN KUDEAKETA
-### 3. DIGITALIZAZIOA
-### 4. SAREAK PLANIFIKATZEA ETA ADMINISTRATZEA
-### 5. MARKATZE LENGOAIAK
+### 1. Sareak planifikatzea eta administratzea
+### 2. Sistema eragileak ezartzea
+### 3. Markatze lengoaiak
+### 4. Digitalizazioa
+### 5. Datu baseak

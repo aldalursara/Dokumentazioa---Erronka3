@@ -6,8 +6,7 @@ title: Sareen planifikazioa
 ## 1. Sarearen Diseinua
 Gure sarearen topologia desberdinetan banatuta dago konektibitatea eta segurtasuna bermatzeko.
 
-![Sarearen Topologia](esteka_zure_irudira.png)
-
+img/Sareen planifikazioa/diseinua.png
 ## 2. Sareen Taula (VLAN)
 Hona hemen sare bakoitzaren xehetasunak:
 
